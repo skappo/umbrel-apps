@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: nextcloud
 category: files
 name: Nextcloud
-version: "25.0.1"
+version: "25.0.12"
 tagline: Productivity platform that keeps you in control
 description: >-
   Nextcloud puts your data at your fingertips, under your control.
@@ -44,4 +44,4 @@ defaultUsername: umbrel
 deterministicPassword: true
 torOnly: false
 submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel/commit/dcaae95daa8ee3d7e8044d55d13887d8ff353030
+submission: 
