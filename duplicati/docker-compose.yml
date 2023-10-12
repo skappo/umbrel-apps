@@ -19,7 +19,7 @@ services:
       - TZ=Etc/UTC
       - CLI_ARGS= #optional
     volumes:
-      - ${APP_DATA_DIR}/config:config
+      - ${APP_DATA_DIR}/config:/config
       - ${UMBREL_ROOT}/data/storage/backups:/backups
       - ${UMBREL_ROOT}/data/storage/source:/source
     ports:
