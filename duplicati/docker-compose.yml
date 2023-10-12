@@ -5,8 +5,8 @@ services:
       # <app-id>_<web-container-name>_1
       # e.g. 'btc-rpc-explorer_web_1'
       # Note that the '_1' at the end is needed
-      APP_HOST: duplicati_1
-      APP_PORT: 8536
+      APP_HOST: duplicati_web_1
+      APP_PORT: 8200
 
   web:
     image: linuxserver/duplicati:2.0.7
