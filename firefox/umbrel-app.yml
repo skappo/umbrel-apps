@@ -2,7 +2,7 @@ manifestVersion: 1
 id: firefox
 category: networking
 name: Firefox
-version: "101.0.1"
+version: "116.0.3"
 tagline: Firefox is a free and open-source web browser
 description: >-
   Get the browser that protects what is important.
