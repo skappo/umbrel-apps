@@ -1,0 +1,31 @@
+manifestVersion: 1
+id: duplicati
+category: files
+name: Duplicati
+version: "2.0.7"
+tagline: Simple, database-free blockchain explorer
+description: >-
+  Duplicati is a backup client that securely stores encrypted, incremental, 
+  compressed remote backups of local files on cloud storage services and remote file servers.
+releaseNotes: >-
+  Dark mode is finally here! Easily switch between your preferred mode
+  in one click.
+
+  This version also includes lots of minor styling improvements, better
+  error handling, and several bugfixes.
+developer: xxx
+website: https://www.duplicati.com/
+dependencies:
+
+repo: https://github.com/imagegenius/docker-duplicati
+support: 
+port: 8536
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: Umbrel
+submission: https://github.com/getumbrel/umbrel/pull/334

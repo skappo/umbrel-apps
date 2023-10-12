@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+  app_proxy:
+    environment:
+      # <app-id>_<web-container-name>_1
+      # e.g. 'btc-rpc-explorer_web_1'
+      # Note that the '_1' at the end is needed
+      APP_HOST: duplicati_1
+      APP_PORT: 8536
+
+  web:
+    image: linuxserver/duplicati:2.0.7
+    restart: on-failure
+    stop_grace_period: 1m
+    hostname: umbrel
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - CLI_ARGS= #optional
+    volumes:
+      - ${APP_DATA_DIR}/config:config
+      - ${UMBREL_ROOT}/data/storage/backups:/backups
+      - ${UMBREL_ROOT}/data/storage/source:/source
+    ports:
+      - 8200:8200
